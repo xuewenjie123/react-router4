@@ -1,0 +1,1 @@
+下载项目后建议下载yarn   执行yarn run server 即可运行，如果报错删除掉yarn.lock文件重新执行  
