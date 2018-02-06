@@ -23,6 +23,7 @@ module.exports = {
             template: __dirname+'/public/index.html', //指定模板路径
             filename: 'index.html', //指定文件名
         }),
+        //针对打包的配置
         new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.optimize.UglifyJsPlugin(),
         new ExtractTextPlugin("style.css"),
@@ -32,10 +33,10 @@ module.exports = {
             {
                 test: /\.js$/, //配置要处理的文件格式，一般使用正则表达式匹配
                 loader: 'babel-loader', //使用的加载器名称
-                query: { //babel的配置参数，可以写在.babelrc文件里也可以写在这里
-                    presets: ['env', 'react'],
-                    plugins: ["react-hot-loader/babel"]
-                }
+                // query: { //babel的配置参数，可以写在.babelrc文件里也可以写在这里
+                //     presets: ['env', 'react'],
+                //     plugins: ["react-hot-loader/babel"]
+                // }
             },
             {
                 test: /\.js$/,

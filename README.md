@@ -1,1 +1,1 @@
-下载项目后建议下载yarn   执行yarn run server 即可运行，如果报错删除掉yarn.lock文件重新执行  
+项目使用了react-router4.2 eslint redux 关于eslint不支持对象扩展符暂时还没有解决 npm build打包  下载项目后建议下载yarn   执行yarn run server 即可运行，如果报错删除掉yarn.lock文件重新执行  

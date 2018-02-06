@@ -31,12 +31,12 @@ module.exports = {
     module: {
         loaders: [ //配置加载器
             {
-                test: /\.js$/, //配置要处理的文件格式，一般使用正则表达式匹配
-                loader: 'babel-loader', //使用的加载器名称
-                query: { //babel的配置参数，可以写在.babelrc文件里也可以写在这里
-                    presets: ['env', 'react'],
-                    plugins: ["react-hot-loader/babel"]
-                }
+                test: /\.js$/, //配置要处理的文件格式，一般使用正则式匹配
+                loader: "babel-loader" //使用的加载器名称
+                // query: { //babel的配置参数，可以写在.babelrc文件里也可以写在这里
+                //     presets: ["env", "react","es2015"],
+                //     plugins: ["react-hot-loader/babel"]
+                // }
             },
             {
                 test: /\.js$/,
