@@ -32,16 +32,18 @@ module.exports = {
         loaders: [ //配置加载器
             {
                 test: /\.js$/, //配置要处理的文件格式，一般使用正则式匹配
-                loader: "babel-loader" //使用的加载器名称
+                loader: "babel-loader", //使用的加载器名称
                 // query: { //babel的配置参数，可以写在.babelrc文件里也可以写在这里
                 //     presets: ["env", "react","es2015"],
                 //     plugins: ["react-hot-loader/babel"]
                 // }
+                exclude: /node_modules/
             },
             {
                 test: /\.js$/,
                 enforce: 'pre', //加载器的执行顺序，不设置为正常执行，pre（前）|post（后），eslint是检查代码规范，应该在编译前就执行
                 loader: 'eslint-loader',
+                exclude: /node_modules/
             },
             {
                 test: /\.css/,
