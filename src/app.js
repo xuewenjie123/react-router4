@@ -17,7 +17,7 @@ const App = () => (
                             <Route exact path="/" component={Page1}/>
                             <Route path="/page2:info" component={Page2}/>
                             <Route path="/page3" component={Page3}/>
-                            <Redirect to="/"/>
+                            <Redirect from="*" to="/"/>
                         </Switch>
                     )
                 }}/>

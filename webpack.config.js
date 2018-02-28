@@ -10,6 +10,7 @@ module.exports = {
     devServer: {
         contentBase: path.resolve(__dirname, 'build'),
         inline: true,
+        historyApiFallback:true
         //contentBase: "./build",//本地服务器所加载的页面所在的目录
         //contentBase默认webpack-dev-server会为根文件夹提供本地服务器，如果想为另外一个目录下的文件提供本地服务器，应该在这里设置其所在目录（本例设置到“public"目录）
         //port 设置默认监听端口，如果省略，默认为”8080“

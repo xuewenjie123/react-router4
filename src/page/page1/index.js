@@ -13,7 +13,7 @@ class Page1 extends Component{
         const name = "文杰"
         return (
             <div>
-            <p onClick={()=>{this._click()}}>我是page1的页面 这是redux的数据时尚logintest{this.props.logintest}</p> 
+            <p onClick={()=>{this._click()}}>我是page1的页面 这是sssredux的数据时尚logintest{this.props.logintest}</p> 
             <Link to={{pathname:`/page2:{name:${name}}`,state:{name:"state"},query:{name:"query"}}}>我是去往page2的链接</Link>
             <Button type="primary">Primary</Button>
             <Button className="btn1">Default</Button>
